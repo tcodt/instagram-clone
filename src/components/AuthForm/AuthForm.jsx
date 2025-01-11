@@ -1,4 +1,4 @@
-import { Alert, Box, Button, Divider } from "@mui/material";
+import { Box, Button, Divider } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Bounce, toast } from "react-toastify";
@@ -40,14 +40,14 @@ const AuthForm = () => {
           <input
             placeholder="Email"
             type="email"
-            className="w-full h-10 bg-transparent py-2 px-4 text-white text-sm border border-gray-600 rounded focus:border-white outline-none"
+            className="w-full h-10 bg-transparent py-2 px-4 text-white text-sm border border-gray-600 rounded focus:border-blue-500 outline-none"
             value={inputs.email}
             onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
           />
           <input
             placeholder="Password"
             type="password"
-            className="w-full h-10 bg-transparent py-2 px-4 text-white text-sm border border-gray-600 rounded focus:border-white outline-none"
+            className="w-full h-10 bg-transparent py-2 px-4 text-white text-sm border border-gray-600 rounded focus:border-blue-500 outline-none"
             value={inputs.password}
             onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
           />
@@ -56,7 +56,7 @@ const AuthForm = () => {
             <input
               placeholder="Confirm Password"
               type="password"
-              className="w-full h-10 bg-transparent py-2 px-4 text-white text-sm border border-gray-600 rounded focus:border-white outline-none"
+              className="w-full h-10 bg-transparent py-2 px-4 text-white text-sm border border-gray-600 rounded focus:border-blue-500 outline-none"
               value={inputs.confirmPassword}
               onChange={(e) =>
                 setInputs({ ...inputs, confirmPassword: e.target.value })
